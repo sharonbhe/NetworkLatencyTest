@@ -14,8 +14,8 @@ with open(filename, mode='w', newline='') as file:
     writer = csv.writer(file)
     writer.writerow(["Timestamp", "Target", "Latency_ms", "Status"])
 
-# Ping every 60 seconds for 10 iterations (or run indefinitely with a while loop)
-for i in range(60):
+# Ping every 10 seconds for 8640 iterations (24 hours)
+for i in range(8640):
     for target in targets:
         timestamp = datetime.now().isoformat()
         try:
